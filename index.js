@@ -1,4 +1,7 @@
 //Your code here
 justInvoke(fn) {
-  this.fn = fn
+    fn.filter(function(fn){
+      return fn == this.fn
+    })
 }
+
